@@ -5,6 +5,17 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT,
     logging: process.env.DB_LOGGING === "true",
+    port: 1433, // Bổ sung nếu chưa có
+    dialectOptions: {
+        encrypt: true,                 // BẮT BUỘC với Azure SQL
+        trustServerCertificate: false // Nên giữ false để bảo mật
+    },
+    pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+    }
 });
 
 const connectDB = async () => {
