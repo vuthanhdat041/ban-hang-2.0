@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3030/api"; // Backend Express
+const API_BASE_URL = "https://ban-hang-2-0.onrender.com"; // Backend Express
 
 const api = axios.create({
     baseURL: API_BASE_URL,
