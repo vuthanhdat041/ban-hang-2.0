@@ -4,6 +4,7 @@ const API_BASE_URL = "https://ban-hang-2-0.onrender.com"; // Backend Express
 
 const api = axios.create({
     baseURL: API_BASE_URL,
+    withCredentials: true,
     headers: {
         "Content-Type": "application/json",
     },
