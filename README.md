@@ -34,7 +34,7 @@ Website quản lý bán hàng gồm 2 phần:
 ### ⚙️ Cài đặt chung
 
 ```bash
-git clone https://github.com/vuthanhdat041/WebBanHang.git
+git clone https://github.com/vuthanhdat041/ban-hang-2.0.git
 cd WebBanHang
 ```
 
@@ -58,3 +58,6 @@ Tuy nhiên, **không nên áp dụng cách này với project thật hoặc ch�
 cd client
 npm install
 npm start
+
+## Cài đặt cơ sở dữ liệu SQL Server:
+
